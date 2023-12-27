@@ -8,20 +8,21 @@ import SignOut from '@/app/ui/dashboard/signout';
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     
-    <main className="flex min-h-screen flex-col">
-      
+    <main>
     
-    <div className="flex rounded-none bg-blue-500">
+    <div className="flex rounded-none bg-blue-500 max-w-full">
       {/*<AcmeLogo /> */}
       <div className="flex h-10">
         <DbLogo/>
       </div>
-      <div className="flex h-10">
+      <div className="flex h-10 pr-96">
          <Bars3BottomLeft/> 
       </div>
-      <div className="flex h-10">
+      <div className="flex h-10 pr-80">
       </div>
-      <div className="flex h-10">
+      <div className="flex h-10 pr-80">
+      </div>
+      <div className="flex h-10 pl-96">
         <SignOut/>
       </div>
    </div>
